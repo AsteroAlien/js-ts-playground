@@ -16,4 +16,9 @@ describe("worker function test", () => {
     const expectedCount = 45;
     expect(performCalulationLoop(10)).toBe(expectedCount);
   });
+
+  it('performCalculationLoop- returns count null for count', () => {
+    const expectedCount = 0;
+    expect(performCalulationLoop(-5)).toBe(expectedCount);
+  });
 });
